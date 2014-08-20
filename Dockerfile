@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y inotify-tools openssh-server python2.7 python-pycurl python-pip
 RUN pip install --upgrade pip
 RUN pip install tornado
-RUN mkdir -p /var/www #&& cd /var/www && echo "hello world" > run.sh && chmod +x run.sh
+RUN mkdir -p /var/www
 
 WORKDIR /var/www
 EXPOSE 80
